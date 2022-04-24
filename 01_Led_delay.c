@@ -1,4 +1,6 @@
-﻿﻿// A. Inácio Morais - 04/2022
+﻿﻿// A. Inácio Morais - 04/2022 
+// anderson.morais@protonmail.com - Brazil
+//
 // SDCC and STM8FLASH - SMT8S103F3 - HSI 16 MHz
 // 253 bytes | 8 kbytes
 
