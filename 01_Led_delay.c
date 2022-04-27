@@ -24,9 +24,6 @@ void delay_us(unsigned int us) 		// Reliable for delay equal to or greater than 
 {
 	unsigned char byte_msb = (us >> 8), byte_lsb = us & 0x00FF;
 
-	//byte_msb = (us >> 8);		// 8 bits mais significativos
-	//byte_lsb = us & 0x00FF; 	// 8 bits menos significativos
-
 	TIM2_SR1 &= ~(1 << UIF); 	// Clear the update event flag
 	TIM2_PSCR = 0x04; 		// 1000 MHz (16 MHz/16 -> 1 us)
 	TIM2_ARRH = byte_msb;
